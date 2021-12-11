@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navbar/pages/Widget/settingsPage/settingsListWidget.dart';
 import 'package:navbar/pages/Widget/settingsPage/verifiedWidget.dart';
-import 'package:navbar/pages/Widget/walletPage/cardSettingsTitleWidget.dart';
-import 'package:navbar/pages/Widget/walletPage/cardSettingsItemsWidget.dart';
 import 'package:navbar/pages/Widget/walletPage/bottomBorderWidget.dart';
 
 import '../constants.dart';
@@ -51,13 +49,9 @@ class _SettingsPageState extends State<SettingsPage> {
             settingsListWidget('assets/images/IconLogo/settings.png', 'Settings', 'assets/images/IconLogo/rightarrow.png'),
             settingsListWidget('assets/images/IconLogo/help.png', 'Help & Support', 'assets/images/IconLogo/rightarrow.png'),
             settingsListWidget('assets/images/IconLogo/share.png', 'Share The App', 'assets/images/IconLogo/rightarrow.png'),
-            CardSettingsTitleWidget(),
-            cardSettingsItemWidget('assets/images/IconLogo/pin.png', 'Change PIN Code', 'assets/images/IconLogo/rightarrow.png'),
-            bottomBorderWidget(),
-            cardSettingsItemWidget('assets/images/IconLogo/blocked.png', 'Block Card', 'assets/images/IconLogo/rightarrow.png'),
-            bottomBorderWidget(),
-            cardSettingsItemWidget('assets/images/IconLogo/download.png', 'Download Statement', 'assets/images/IconLogo/rightarrow.png'),
-            bottomBorderWidget(),
+            settingsListWidget('assets/images/IconLogo/pin.png', 'Change PIN Code', 'assets/images/IconLogo/rightarrow.png'),
+            settingsListWidget('assets/images/IconLogo/blocked.png', 'Block Card', 'assets/images/IconLogo/rightarrow.png'),
+            settingsListWidget('assets/images/IconLogo/download.png', 'Download Statement', 'assets/images/IconLogo/rightarrow.png'),
           ],
         ),
       ),

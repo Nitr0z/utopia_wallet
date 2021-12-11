@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/accueil.png',
-                color: _selectedIndex == 0 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 0 ? primaryColor : Colors.white,
                 ),
               ),
               height: 40,
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Home",
               style: TextStyle(
-                color: _selectedIndex == 0 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 0 ? primaryColor : Colors.white,
               ),
             ),
           ),
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/investissement.png',
-                  color: _selectedIndex == 1 ? Colors.white : Colors.white70,
+                  color: _selectedIndex == 1 ? primaryColor : Colors.white,
                 ),
               ),
               height: 45,
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Projects",
               style: TextStyle(
-                color: _selectedIndex == 1 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 1 ? primaryColor : Colors.white,
               ),
             ),
           ),
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/wallet.png',
-                  color: _selectedIndex == 2 ? Colors.white : Colors.white70,
+                  color: _selectedIndex == 2 ? primaryColor : Colors.white,
                 ),
               ),
               height: 40,
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Wallet",
               style: TextStyle(
-                color: _selectedIndex == 2 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 2 ? primaryColor : Colors.white,
               ),
             ),
           ),
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/emplacement.png',
-                  color: _selectedIndex == 3 ? Colors.white : Colors.white70,
+                  color: _selectedIndex == 3 ? primaryColor : Colors.white,
                 ),
               ),
               height: 45,
@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("RoadMap",
               style: TextStyle(
-                color: _selectedIndex == 3 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 3 ? primaryColor : Colors.white,
               ),
             ),
           ),
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/settings.png',
-                  color: _selectedIndex == 4 ? Colors.white : Colors.white70,
+                  color: _selectedIndex == 4 ? primaryColor : Colors.white,
                 ),
               ),
               height: 40,
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Settings",
               style: TextStyle(
-                color: _selectedIndex == 4 ? Colors.white : Colors.white70,
+                color: _selectedIndex == 4 ? primaryColor : Colors.white,
               ),
             ),
           ),

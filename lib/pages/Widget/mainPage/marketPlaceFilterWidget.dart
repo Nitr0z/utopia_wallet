@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:draw_graph/draw_graph.dart';
-import 'package:draw_graph/models/feature.dart';
 
+import '../../constants.dart';
 
 
 class marketPlaceFilterWidget extends StatelessWidget {
@@ -17,15 +16,8 @@ class marketPlaceFilterWidget extends StatelessWidget {
               Container(
                 padding: EdgeInsets.only(left: 10, top: 5, right: 10, bottom: 5),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: secondaryColor,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(.5),
-                      blurRadius: 10.0,
-                      spreadRadius: 1.0,
-                    ),
-                  ],
                 ),
                 child:  Text('All',
                   style: TextStyle(
@@ -34,19 +26,12 @@ class marketPlaceFilterWidget extends StatelessWidget {
               ),
               SizedBox(width: 10,),
               Container(
-                padding: EdgeInsets.only(left: 10, top: 5, right: 10, bottom: 5),
+                padding: EdgeInsets.only(left: 10, top: 7, right: 10, bottom: 7),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: secondaryColor,
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(.5),
-                      blurRadius: 10.0,
-                      spreadRadius: 1.0,
-                    ),
-                  ],
                 ),
-                child:  Image.asset('assets/images/IconLogo/favorite.png', width: 13),
+                child:  Image.asset('assets/images/IconLogo/favorite.png', width: 13, color: textcolor,),
 
                 ),
             ],
@@ -54,15 +39,8 @@ class marketPlaceFilterWidget extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(left: 10, top: 5, right: 10, bottom: 5),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: secondaryColor,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(.5),
-                  blurRadius: 10.0,
-                  spreadRadius: 1.0,
-                ),
-              ],
             ),
             child:  Text('Cap. du marché',
               style: TextStyle(

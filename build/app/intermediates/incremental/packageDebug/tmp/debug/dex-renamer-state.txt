@@ -1,4 +1,4 @@
-#Sat Dec 11 23:49:29 CET 2021
+#Sun Dec 12 00:52:46 CET 2021
 base.0=C\:\\Users\\theop\\Desktop\\utopia_wallet\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
