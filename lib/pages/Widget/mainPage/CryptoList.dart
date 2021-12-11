@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:draw_graph/draw_graph.dart';
-import 'package:draw_graph/models/feature.dart';
 
 
 
@@ -61,10 +59,6 @@ class CryptoListMain extends StatelessWidget {
           SizedBox(width: 50,),
 
 
-          Image.asset('assets/images/courbe.png',
-            width: 50,
-            height: 50,
-          ),
           SizedBox(width: 50,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
