@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:navbar/pages/roadmap_page.dart';
 import 'package:navbar/pages/settings_page.dart';
 import 'package:navbar/pages/wallet_page.dart';
 import 'package:navbar/pages/main_page.dart';
+import 'package:navbar/pages/projects_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -12,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   PageController _pageController = PageController();
-  List<Widget> _screens = [MainPage(), WalletPage(), SettingsPage()];
+  List<Widget> _screens = [MainPage(), ProjectsPage(), WalletPage(), RoadmapPage(), SettingsPage()];
 
   int _selectedIndex = 0;
   void _onPageChanged(int index) {
@@ -35,7 +37,7 @@ class _HomePageState extends State<HomePage> {
         physics: NeverScrollableScrollPhysics(),
       ),
       bottomNavigationBar: BottomNavigationBar (
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
         items: [
@@ -43,7 +45,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/accueil.png',
-                color: _selectedIndex == 0 ? Colors.white : Colors.grey,
+                color: _selectedIndex == 0 ? Colors.black : Colors.black54,
                 ),
               ),
               height: 40,
@@ -51,7 +53,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Home",
               style: TextStyle(
-                color: _selectedIndex == 0 ? Colors.white : Colors.grey,
+                color: _selectedIndex == 0 ? Colors.black : Colors.black54,
               ),
             ),
           ),
@@ -59,16 +61,16 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             icon: SizedBox(
               child: IconButton(
-                icon: new Image.asset('assets/images/IconLogo/wallet.png',
-                  color: _selectedIndex == 1 ? Colors.white : Colors.grey,
+                icon: new Image.asset('assets/images/IconLogo/investissement.png',
+                  color: _selectedIndex == 1 ? Colors.black : Colors.black54,
                 ),
               ),
-              height: 40,
-              width: 40,
+              height: 45,
+              width: 45,
             ),
             title: Text("Projects",
               style: TextStyle(
-                color: _selectedIndex == 1 ? Colors.white : Colors.grey,
+                color: _selectedIndex == 1 ? Colors.black : Colors.black54,
               ),
             ),
           ),
@@ -77,15 +79,33 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/wallet.png',
-                  color: _selectedIndex == 1 ? Colors.white : Colors.grey,
+                  color: _selectedIndex == 2 ? Colors.black : Colors.black54,
                 ),
               ),
               height: 40,
               width: 40,
             ),
-            title: Text("Raodmap",
+            title: Text("Wallet",
               style: TextStyle(
-                color: _selectedIndex == 1 ? Colors.white : Colors.grey,
+                color: _selectedIndex == 2 ? Colors.black : Colors.black54,
+              ),
+            ),
+          ),
+
+
+          BottomNavigationBarItem(
+            icon: SizedBox(
+              child: IconButton(
+                icon: new Image.asset('assets/images/IconLogo/emplacement.png',
+                  color: _selectedIndex == 3 ? Colors.black : Colors.black54,
+                ),
+              ),
+              height: 45,
+              width: 45,
+            ),
+            title: Text("RoadMap",
+              style: TextStyle(
+                color: _selectedIndex == 3 ? Colors.black : Colors.black54,
               ),
             ),
           ),
@@ -95,7 +115,7 @@ class _HomePageState extends State<HomePage> {
             icon: SizedBox(
               child: IconButton(
                 icon: new Image.asset('assets/images/IconLogo/settings.png',
-                  color: _selectedIndex == 2 ? Colors.white : Colors.grey,
+                  color: _selectedIndex == 4 ? Colors.black : Colors.black54,
                 ),
               ),
               height: 40,
@@ -103,7 +123,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text("Settings",
               style: TextStyle(
-                color: _selectedIndex == 2 ? Colors.white : Colors.grey,
+                color: _selectedIndex == 4 ? Colors.black : Colors.black54,
               ),
             ),
           ),

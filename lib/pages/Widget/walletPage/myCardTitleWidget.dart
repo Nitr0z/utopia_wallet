@@ -9,7 +9,7 @@ class CardTitleWidget extends StatelessWidget {
       child: Row (
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text('My cards',
+          Text('Wallet',
           style: TextStyle(
             fontWeight: FontWeight.w400,
             fontSize: 18,
