@@ -46,7 +46,8 @@ class _RoadmapPageState extends State<RoadmapPage> {
             Container(
               margin: EdgeInsets.only(left: 20, top: 5, right: 20, bottom: 5),
               color: secondaryColor,
-                child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue sem arcu, nec congue metus venenatis vitae.'),
+                child:
+                Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue sem arcu, nec congue metus venenatis vitae.'),
             ),
           ],
         ),
