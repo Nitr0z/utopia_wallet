@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navbar/pages/Widget/walletPage/chart_info.dart';
 
 import '../constants.dart';
 
@@ -33,9 +34,10 @@ class _WalletPageState extends State<WalletPage> {
         ],
       ),
       backgroundColor: Color(0xF5F6FA),
-      body: Center(
+      body: SingleChildScrollView(
     child: Column(
           children: [
+            ChartDetails(),
           ],
         ),
       ),

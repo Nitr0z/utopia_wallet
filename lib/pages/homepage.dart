@@ -36,7 +36,6 @@ class _HomePageState extends State<HomePage> {
         controller: _pageController,
         children: _screens,
         onPageChanged: _onPageChanged,
-        physics: NeverScrollableScrollPhysics(),
       ),
       bottomNavigationBar: BottomNavigationBar (
         backgroundColor: secondaryColor,

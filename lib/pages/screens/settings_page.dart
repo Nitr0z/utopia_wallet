@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navbar/pages/Widget/settingsPage/settingsListWidget.dart';
 import 'package:navbar/pages/Widget/settingsPage/verifiedWidget.dart';
-import 'package:navbar/pages/Widget/walletPage/bottomBorderWidget.dart';
+import 'file:///C:/Users/theop/Desktop/utopia_wallet/lib/pages/Widget/settingsPage/bottomBorderWidget.dart';
 
 import '../constants.dart';
 

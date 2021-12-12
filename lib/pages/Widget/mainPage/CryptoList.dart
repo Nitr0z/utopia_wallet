@@ -42,7 +42,7 @@ class CryptoListMain extends StatelessWidget {
                     children: [
                       Text(cryptoName),
                       Text(cryptoDesc,
-                        style: TextStyle(color: textcolor,
+                        style: TextStyle(color: primaryColor,
                           fontWeight: FontWeight.w300,
                           fontSize: 15,
                         ),),
