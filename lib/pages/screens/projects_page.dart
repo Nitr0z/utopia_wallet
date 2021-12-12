@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navbar/pages/Widget/projectsPage/ProjectsList.dart';
 
 import '../constants.dart';
 
@@ -31,10 +32,13 @@ class _ProjectsPageState extends State<ProjectsPage> {
         ],
       ),
       backgroundColor: Color(0xF5F6FA),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Padding(padding: EdgeInsets.only(top: 10.0)),
+            ProjectsListMain('Bitcoin','BTC', r'68560€', '+0.11%'),
+            ProjectsListMain('Ethereum','ETH', r'5728€', '+0.45%'),
           ],
         ),
       ),
