@@ -8,10 +8,9 @@ class ProjectsListMain extends StatelessWidget {
 
   String ProjectName;
   String ProjectDesc;
-  String ProjectPrice;
   String ProjectChange;
 
-  ProjectsListMain(ProjectName,ProjectDesc,ProjectPrice,ProjectChange):ProjectName = ProjectName, ProjectDesc = ProjectDesc, ProjectPrice = ProjectPrice, ProjectChange = ProjectChange;
+  ProjectsListMain(ProjectName,ProjectDesc,ProjectChange):ProjectName = ProjectName, ProjectDesc = ProjectDesc, ProjectChange = ProjectChange;
 
 
   @override
@@ -38,7 +37,7 @@ class ProjectsListMain extends StatelessWidget {
                     children: [
                       Text(ProjectName),
                       Text(ProjectDesc,
-                        style: TextStyle(color: primaryColor,
+                        style: TextStyle(color: iconcolor,
                           fontWeight: FontWeight.w300,
                           fontSize: 15,
                         ),),
@@ -48,17 +47,15 @@ class ProjectsListMain extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(width: 50,),
+          SizedBox(width: 0,),
 
 
           SizedBox(width: 50,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Text(ProjectPrice,
-              ),
               Text(ProjectChange,
-                style: TextStyle(color: Colors.green,
+                style: TextStyle(color: primaryColor,
                   fontSize: 12,
                 ),
               ),

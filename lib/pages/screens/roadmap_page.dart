@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navbar/pages/Widget/roadmapPage/RoadmapList.dart';
 
 import '../constants.dart';
 
@@ -31,10 +32,22 @@ class _RoadmapPageState extends State<RoadmapPage> {
         ],
       ),
       backgroundColor: Color(0xF5F6FA),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Padding(padding: EdgeInsets.only(top: 10.0)),
+            RoadmapListMain('10-12-2019', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue sem arcu, nec congue metus venenatis vitae.'),
+            IconButton(
+              icon: Icon(Icons.arrow_circle_down),
+              color: textcolor,
+              onPressed: (){},
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, top: 5, right: 20, bottom: 5),
+              color: secondaryColor,
+                child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue sem arcu, nec congue metus venenatis vitae.'),
+            ),
           ],
         ),
       ),

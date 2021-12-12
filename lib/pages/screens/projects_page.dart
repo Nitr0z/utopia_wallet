@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:navbar/pages/Widget/projectsPage/ProjectsList.dart';
+import 'package:navbar/pages/Widget/projectsPage/lowTitle.dart';
+import 'package:navbar/pages/Widget/projectsPage/moderateTitle.dart';
+import 'package:navbar/pages/Widget/projectsPage/titlehigh.dart';
 
 import '../constants.dart';
 
@@ -37,8 +40,14 @@ class _ProjectsPageState extends State<ProjectsPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(padding: EdgeInsets.only(top: 10.0)),
-            ProjectsListMain('Bitcoin','BTC', r'68560€', '+0.11%'),
-            ProjectsListMain('Ethereum','ETH', r'5728€', '+0.45%'),
+            highTitle(),
+            ProjectsListMain('Ai Marketing','www.aimarketing.com', '50% / Mensuel'),
+            moderateTitle(),
+            ProjectsListMain('Robot Gold','www.autotrade.com', '10% / Mensuel'),
+            ProjectsListMain('Robot Forex','www.samtradefx.com', '13% / Mensuel'),
+            lowTitle(),
+            ProjectsListMain('Robot Crypto','www.kryll.com', '25% / Mensuel'),
+
           ],
         ),
       ),
